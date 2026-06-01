@@ -1,0 +1,16 @@
+body, h1,h2,h3,h4,h5,h6 {
+    font-family: "Montserrat", sans-serif
+    
+}
+    .w3-sidebar {
+        width: 120px;
+        background: #3a3737;
+}
+.main {
+    margin-left: 120px;
+}
+.lista-texto {
+  white-space: pre-line;
+  line-height: 2;
+}
+
