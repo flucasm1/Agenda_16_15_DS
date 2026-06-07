@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GEEAD - Técnico em Desenvolvimento de Sistemas</title>3
+    <title>GEEAD - Técnico em Desenvolvimento de Sistemas</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="style.css">
+    <script src="javas.js"></script>
+    
 </head>
     
 <body class="w3-black">
@@ -31,6 +33,11 @@
         <a href="#faq" class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-hover-text-cyan w3-text-white">
             <i class="fa-solid fa-circle-question w3-xxxlarge"></i>
             <p>FAQ</p>
+        </a>
+        <!--SERVIÇOS-->
+        <a href="#servicos" class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-hover-text-cyan w3-text-white">
+            <i class="fa-solid fa-box w3-xxxlarge"></i>
+            <p>PRODUTOS<br>SERVIÇOS</p>
         </a>
         <!--INACABADO
         CONTATO (comentário)
@@ -157,5 +164,87 @@
             </p>
         </div>
     </div>
+   <div class="w3-padding-large main w3-content w3-padding-64" id="servicos"> <!--SERVIÇOS-->
+        <div class="w3-row w3-padding-32">
+            <h2>PRODUTOS</h2>
+            <!-- TEXTO DOS PRODUTOS -->
+            <div class="w3-row">
+
+                <div class="w3-half w3-padding">
+                    <ul class="w3-ul w3-round-large lista-produtos">
+
+                        <li>
+                            <h3>Clássico "Cachorrão do Claudão"</h3>
+                            <p>
+                                Salsicha, molho branco, ketchup, mostarda,
+                                batata-palha, ervilha, milho e cebola.
+                            </p>
+                        </li>
+
+                        <li>
+                            <h3>Porcão do Claudão</h3>
+                            <p>
+                                Cachorro-quente com bacon, cheddar, molho branco, ketchup, mostarda
+                                batata-palha, ervilha, milho e cebola.
+                            </p>
+                        </li>
+
+                        <li>
+                            <h3>Cremosinho</h3>
+                            <p>
+                                Cachorro-quente com bastante cheddar cremoso
+                                e bacon triturado por cima.
+                            </p>
+                        </li>
+
+                        <li>
+                            <h3>Batatas do Claudão</h3>
+                            <p>
+                                Batatas fritas crocantes e feitas na hora, acompanhadas por cheddar e bacon triturado por um adicional de R$ 6,00.
+                            </p>
+                        </li>
+
+                    </ul>
+                </div>    
+                <div class="w3-content w3-section w3-marginright w3-half w3-padding" style="max-width:500px"><!--imagensprodutos-->
+                    <img class="slide" src="img\cachorro-claudao-classico.png" style="width:200%">
+                    <img class="slide" src="img\porcao-do-claudao.png" style="width:200%">
+                    <img class="slide" src="img\cremosinho-do-claudao.png" style="width:200%">
+                    <img class="slide" src="img\batatinhas-do-claudao.png" style="width:200%">
+                    <footer class="w3-center w3-padding-10 w3-text-grey">
+                    <p>Imagens criadas com auxílio de inteligência artificial.</p> </footer>
+            </div>
+        </div>
+            
+        
+                <!--autoslideshow--><script> 
+            var index = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("slide");
+
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+
+                index++;
+
+                if (index > x.length) {
+                    index = 1;
+                }
+
+                x[index - 1].style.display = "block";
+
+                setTimeout(carousel, 2000);
+            }
+            </script>
+             <p id="teste">Quer encomendar?</p>
+             <button type="button" onclick="document.getElementById('teste').innerHTML='trabalhando nisso...'">Clique para a resposta</button>
+        </header>
+    </div>
+
+    
 </body>
 </html>

@@ -13,4 +13,38 @@ body, h1,h2,h3,h4,h5,h6 {
   white-space: pre-line;
   line-height: 2;
 }
+.w3-sidebar {
+    width: 120px;
+    background-color: #3a3636;
+}
 
+.w3-sidebar a {
+    text-align: center;
+}
+
+.w3-sidebar p {
+    text-align: center;
+    margin: 8px 0 0 0;
+}
+
+.lista-produtos {
+    background-color: #111;
+    border-radius: 10px;
+}
+
+.lista-produtos li {
+    padding: 20px;
+    border-bottom: 1px solid #222;
+}
+
+.lista-produtos h3 {
+    color: #00ffff;
+    margin: 0 0 8px 0;
+    font-size: 22px;
+}
+
+.lista-produtos p {
+    color: #ccc;
+    margin: 0;
+    line-height: 1.6;
+}
